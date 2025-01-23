@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-fs.readFile('./user.json','utf-8',(err, jsonString) => {
+fs.readFile('./user.json','utf-8',(jsonString) => {
     console.log(jsonString);
 })
 
@@ -21,11 +21,3 @@ fs.writeFile('./userWrite.json', JSON.stringify(newObject), err => {
 
 
 
-
-
-// const app = express();
-
-// app.listen(3001, () => {
-//     console.log("http://localhost:3001")
-//     console.log("Server is running...")
-// })
